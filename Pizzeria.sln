@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzeria", "Pizzeria\Pizzeria.csproj", "{C2591652-E8B7-497F-8299-A6348B16B183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzeria", "Pizzeria\Pizzeria.csproj", "{C2591652-E8B7-497F-8299-A6348B16B183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{56EDFF94-F660-4713-BC4D-B6D1EDEE2A6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C2591652-E8B7-497F-8299-A6348B16B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2591652-E8B7-497F-8299-A6348B16B183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2591652-E8B7-497F-8299-A6348B16B183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56EDFF94-F660-4713-BC4D-B6D1EDEE2A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56EDFF94-F660-4713-BC4D-B6D1EDEE2A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56EDFF94-F660-4713-BC4D-B6D1EDEE2A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56EDFF94-F660-4713-BC4D-B6D1EDEE2A6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

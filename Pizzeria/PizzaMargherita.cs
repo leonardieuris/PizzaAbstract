@@ -8,7 +8,7 @@ namespace Pizzeria
 {
     public class PizzaMargherita : Pizza
     {
-        public PizzaMargherita(double prezzo) : base(prezzo)
+        public PizzaMargherita(TipoPizza tipoPizza) : base(3.50, tipoPizza)
         {
             var mozzarella = new Ingrediente();
             mozzarella.Prezzo = 1;
@@ -27,7 +27,6 @@ namespace Pizzeria
 
             listaIngredienti.Add(mozzarella);
             listaIngredienti.Add(salsadipomodoro);
-            PrezzoBase = 3.50;
         }
 
         public override string Nome()

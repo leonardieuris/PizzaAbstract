@@ -2,7 +2,7 @@
 
 public class PizzaBianca : Pizza
 {
-    public PizzaBianca(double prezzo) : base(prezzo)
+    public PizzaBianca(TipoPizza tipoPizza) : base(2.50,tipoPizza)
     {
         var mozzarella = new Ingrediente();
         mozzarella.Prezzo = 1;
@@ -11,7 +11,6 @@ public class PizzaBianca : Pizza
         mozzarella.Surgelato = false;
 
         listaIngredienti.Add(mozzarella);
-        PrezzoBase = 2.50;
     }
 
     public override string Nome()

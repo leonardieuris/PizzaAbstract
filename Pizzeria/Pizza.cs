@@ -8,16 +8,35 @@ namespace Pizzeria
 {
     public abstract class Pizza : IPizza
     {
-
         protected List<IIngrediente> listaIngredienti = new List<IIngrediente>();
 
         protected double PrezzoBase;
+        protected TipoPizza _tipoPizza;
 
-        public Pizza(double prezzo)
+        public Pizza(double prezzo,TipoPizza tipoPizza)
         {
             PrezzoBase = prezzo;
+            _tipoPizza = tipoPizza;
         }
-        
+
+        public string TipoPizza() => _tipoPizza switch
+        {
+            Pizzeria.TipoPizza.Baby => "Pizza Baby",
+            Pizzeria.TipoPizza.Family => "Pizza Family",
+            Pizzeria.TipoPizza.Normale => "Normal"
+        };
+
+
+
+        private float TipoPizzaPrezzo()
+        {
+            return _tipoPizza switch
+            {
+                Pizzeria.TipoPizza.Baby => 0.5f,
+                Pizzeria.TipoPizza.Family => 2.0f,
+                Pizzeria.TipoPizza.Normale => 1.0f,
+            };
+        }
 
         public double Prezzo()
         {
@@ -27,7 +46,7 @@ namespace Pizzeria
             {
                 prezzoFinale += ingrediente.Prezzo;
             }
-            return prezzoFinale;
+            return prezzoFinale*TipoPizzaPrezzo();
         }
 
         public void AggiungiIngrediente(IIngrediente ingrediente)
